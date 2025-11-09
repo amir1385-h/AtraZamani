@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سامانه پاسخگویی به اعتراض خانم زمانی</title>
+  <link rel="stylesheet" href="./maiim.css">
+  <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="./vite.config.ts"> -->
+<!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: white;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+      margin-left: -100px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide>img {
+      display: block;
+      width: 100%;
+      background-size: cover;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 300px;
+      margin: 20px auto;
+    }
+
+    .append-buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .append-buttons button {
+      display: inline-block;
+      cursor: pointer;
+      border: 0.5px solid red;
+      color:red;
+      text-decoration: none;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin: 0 10px;
+      font-size: 8px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-dark  fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">سامانه پاسخگویی به اعتراضات خانم زمانی  </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Zamani </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-2 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">بازگشت </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+<br>
+<div class="pedar">
+<div class="child1">
+    مرکز اعتراضات<i>></i>
+</div>
+<div class="child2">
+  <a href="./dig/bos.html">
+    💋
+    اعتراض به بوس
+
+
+  </a>
+</div>
+<div class="child2">
+  <a href="./dig/baghal.html">
+    🫂
+    اعتراض به بغل</a>
+</div>
+<div class="child2">
+  <a href="./dig/bah.html">
+    🍔
+    اعتراض به خوراکی</a>
+</div>
+<div class="child2">
+  <a href="./dig/khob.html">
+    😴
+    اعتراض به خواب</a>
+</div>
+<div class="child3">
+  <a href="./dig/sos.html">
+    🌶
+    اعتراض به سس تند
+  </a>
+</div>
+<br>
+<div class="child3">
+  <a href="./dig/bos.html">
+    🌶
+    اعتراض به  تند
+  </a>
+
+</div>
+<div class="position-relative">
+  <div class="position-absolute top-0 start-0"></div>
+  <div class="position-absolute top-0 start-50 translate-middle-x"></div>
+  <div class="position-absolute top-0 end-0"></div>
+  <div class="position-absolute top-50 start-0 translate-middle-y"></div>
+  <div class="position-absolute top-50 start-50 translate-middle"></div>
+  <div class="position-absolute top-50 end-0 translate-middle-y"></div>
+  <div class="position-absolute bottom-0 start-0"></div>
+  <div class="position-absolute bottom-0 start-50 translate-middle-x"></div>
+  <div class="position-absolute bottom-0 end-0"></div>
+</div>
+<div class="child4">
+ <div class="form-check form-switch">
+   <label class="form-check-label" for="flexSwitchCheckDefault">اعتراض شما با خوراکی حل می شود</label>
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+</div>
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+  <label class="form-check-label" for="flexSwitchCheckChecked">اعتراض شما با صحبت حل می شود</label>
+</div>
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+  <label class="form-check-label" for="flexSwitchCheckDisabled">دعوا نه</label>
+</div>
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+  <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">شیرکاکائو اوکیه </label>
+</div>
+  
+</div>
+<div class="child5">
+  <label for="customRange2" class="form-label">میزان اعتراض شما</label>
+<input type="range" class="form-range" min="0" max="5" id="customRange2">
+</div>
+</div>
+
+  <!-- Swiper -->
+
+  <div #swiperRef="" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./pic/68f48bd47aa5c.webp" alt="">
+      </div>
+      <div class="swiper-slide">
+<img src="./pic/nody-عکس-فانتزی-جوجه-اردک-1630628411.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./pic/panda-background5.jpg" alt="">
+      </div>
+      
+      <div class="swiper-slide">
+        <img src="./pic/Dwarf_hotot.jpg" alt="">
+      </div>
+       <div class="swiper-slide">
+
+        <img src="./pic/nody-عکس-حیوانات-زیبا-بامزه-برای-پروفایل-1720759638.jpg" alt="">
+       </div>
+      <div class="swiper-slide">
+
+        <img src="./pic/78eb4600-a2fc-11ef-a664-93943f240730.webp" alt="">
+      </div>
+      <div class="swiper-slide">
+
+        <img src="./pic/irs01_s3old_1617620230551394787.jpg" alt="">
+
+      </div>
+       <div class="swiper-slide">
+
+        
+        <img src="./pic/large_801f743a-15ea-4652-8035-2f6a433b041a.webp" alt="">
+       </div>
+      <div class="swiper-slide">
+        
+        <img src="./pic/GARFIELD-1.webp" alt="">
+      </div>
+      <div class="swiper-slide">
+        
+        <img src="./pic/1716015_565.jpg" alt="">
+      </div>
+       <div class="swiper-slide">
+          <img src="./pic/1474016_314.jpg" alt="">
+       </div>
+      <div class="swiper-slide">
+          <img src="./pic/irs01_s3old_1564226240310129.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+          <img src="./pic/nody-عکس-کارتون-مینیون-ها-عکس--1723844123.jpg" alt="">
+      </div>
+       <div class="swiper-slide">
+          <img src="./pic/7c0b18f026c514e902583dd3822c0917-donoghte.com_.jpg" alt="">
+       </div>
+      <div class="swiper-slide">
+                  <img src="./pic/3e9768bede42917f2e9b0b5049fa1f02.jpg" alt="">
+
+      </div>
+      <div class="swiper-slide">
+                  <img src="./pic/1520085643068.jpeg.webp" alt="">
+
+      </div>
+       <div class="swiper-slide">
+                  <img src="./pic/images (1).jpg" alt="">
+
+       </div>
+      <div class="swiper-slide">
+                  <img src="./pic/image-2.jpg" alt="">
+
+      </div>
+      <div class="swiper-slide">
+                  <img src="./pic/nPBx.jpg" alt="">
+
+      </div>
+       <div class="swiper-slide">
+                  <img src="./pic/images.png" alt="">
+
+       </div>
+      <div class="swiper-slide">
+                  <img src="./pic/Black-Panther-scaled.jpg" alt="">
+
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <br>
+<div class="container">
+  <div class="head">
+    <h3 class="title">
+
+
+      بخش خوراکی ها 
+    </h3>
+    <a class="link" href="./dig/koraki.html">نمایش خوراکی مخصوص لپ تاپ </a>
+  </div>
+
+</div>
+ <div class="container">
+  <div class="head">
+    <h3 class="title">
+
+
+      بخش خوراکی ها 
+    </h3>
+    <a class="link" href="./dig/koraki2.html">نمایش خوراکی مخصوص گوشی</a>
+  </div>
+
+</div>
+      
+      <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+      <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js">
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    var appendNumber = 4;
+    var prependNumber = 1;
+    document
+      .querySelector(".prepend-2-slides")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.prependSlide([
+          '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+          '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+        ]);
+      });
+    document
+      .querySelector(".prepend-slide")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.prependSlide(
+          '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+        );
+      });
+    document
+      .querySelector(".append-slide")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.appendSlide(
+          '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+        );
+      });
+    document
+      .querySelector(".append-2-slides")
+      .addEventListener("click", function (e) {
+        e.preventDefault();
+        swiper.appendSlide([
+          '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+          '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+        ]);
+      });
+  </script>
+
+</body>
+</html>

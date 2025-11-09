@@ -1,0 +1,140 @@
+@import "tailwindcss";
+@font-face{
+    font-family: "Vazir Regular";
+    src: url(../font/ttf/Vazirmatn-Bold.ttf)format(turetype),
+    url(../font/woff/Vazirmatn-Regular.woff2) format(woff2);
+    
+}
+nav{
+ 
+
+    background-image: "../pic/661f9fd19335c9a07547bcb413bc5cbebe766108_1677502893.jpg";
+    
+}
+.container-fluid{
+   a{
+
+        color: whitesmoke
+        ;
+        margin-right: 400px;
+    }
+}
+.navbar-brand{
+    color: red;
+    margin-left: 550px;
+}
+.offcanvas{
+    background: url(../pic/panda10.jpg) no-repeat center center ;
+    background-size: cover;
+
+}
+.form-contro{
+    background: url(../pic/pandalyingdowngiantpanda.jpg);
+}
+.pedar{
+    color: black;
+    margin-top: 60px;
+    width: 100%;
+    height: 600px;
+    background:url(../pic/بچه-گربه-کوچولو-1024x574.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment:fixed ;
+
+}
+.child1{
+    color:black;
+    text-align: center;
+    margin-left: 970px;
+    font-family: Vazir Regular;
+    padding: 4
+    0px;
+    border-collapse: collapse;
+    font-size:30px;
+    line-height: 110px;
+    i{
+         color: black;
+         margin-left: 20px;
+    }
+}
+
+.child2{
+    color:black;
+    text-align: center;
+    margin-left: 970px;
+    font-family: Vazir Regular;
+    padding: 4
+    0px;
+    border-collapse: collapse;
+    font-size:30px;
+    line-height: 110px;
+    i{
+         color: black;
+         margin-left: 20px;
+        }
+    a{
+        text-decoration: none;
+        color:white;
+        &:hover{
+            color: red;
+        }
+    }
+}
+.child3{
+    color:black;
+    text-align: center;
+    margin-left: -650px;
+    margin-top: -442px;
+    font-family: Vazir Regular;
+    padding: 4
+    0px;
+    border-collapse: collapse;
+    font-size:30px;
+    line-height: 110px;
+    i{
+         color: black;
+         margin-left: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        &:hover{
+            color: red;
+        }
+    }
+}
+.child4{
+    color: white;
+    margin-top: 350px;
+    margin-left: 210px;
+    font-size: 25px;
+}
+.child5{
+    width: 20%;
+    margin-left: 270px;
+    margin-top: 40px;
+    font-size: 19px;
+}
+.form-label{
+    color: white;
+    text-align: center;
+    margin-left: 90px;
+}
+.pedar3{
+    width: 100%;
+    height: 400px;
+}
+
+ 
+/* .ju{
+    display: flex;
+    justify-content: center;
+} */
+.amirr{
+    color: blueviolet;
+    margin-left: 990px;
+    font-size: 34px;
+    color:black;
+    i{
+        color: red;
+    }
+}

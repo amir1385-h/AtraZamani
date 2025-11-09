@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "shabnam";
+    src: url(./font/Shabnam-FD.woff2) format("woff");
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+
+}
+body{
+    font-family:"shabnam";
+}
+.container{
+width: 1216px;
+margin: auto;
+margin-left: auto;
+margin-top: 56px;
+}
+.head{
+display: flex;
+justify-content: space-between;
+margin-bottom: 35px;
+}
+.title{
+align-items: center;
+gap: 6px;
+}
+.icon{
+width: 22px;
+height: 22px;
+}
+.link{
+text-decoration: none;
+font-size: 16px;
+color: red;
+}
+.row{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap:4px;
+}
+.product{
+width: 290px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0,08);
+padding: 26px;
+/* border: 1px solid red; */
+}
+.product-imge{
+width: 100%;
+/* max-width: 100%; */
+}
+.name{
+    color: black;
+    font-weight: normal;
+    margin-top: 16px;
+    line-height: 1.6;
+    height: 68px;
+}
+.link{
+    text-decoration: none;
+    color: inherit;
+    font-size: 17px;
+}
+.offer{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.darsad{
+    background-color: aqua;
+    color: blue;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px 4px;
+    border-radius: 9px;
+}
+.price{
+        font-size: 14px;
+        text-decoration: line-through;
+
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+}
+.prise{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.number{
+    font-weight: bold;
+    font-size: 16px;
+}
+.unit{
+    font-size: 14px;
+    gap: 5px;
+}
+.rating{
+    display: flex;
+    align-items: center;
+}
+.rating-number{
+    font-size: 14px;
+}
+.rating-icon{
+    width: 18px;
+    color: yellow;
+    height: 18px;
+}

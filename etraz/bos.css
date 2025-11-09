@@ -1,0 +1,13 @@
+body{
+    background: url(../pic/عکس-png-پاندای-کونگ-فو-کار.jpg) no-repeat;
+    /* background-size: cover; */
+}
+
+h1{
+    color: black;
+    font-weight: bold;
+}
+h1::selection{
+    background-color: chartreuse;
+    color: red;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../etraz/bah.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 2000px; /* برای ایجاد اسکرول */
+            padding: 20px;
+ 
+        }
+
+        #backToHome {
+            position: fixed; /* ثابت در صفحه */
+            bottom: 20px; /* فاصله از پایین */
+            right:402px; /* فاصله از راست */
+            background-color: #28a745; /* رنگ پس‌زمینه */
+            color: white; /* رنگ متن */
+            border: none; /* بدون حاشیه */
+            border-radius: 200px; /* گرد کردن گوشه‌ها */
+            padding: 10px 15px; /* فاصله داخلی */
+            cursor: pointer; /* تغییر شکل نشانگر */
+            font-size: 16px; /* اندازه فونت */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* سایه */
+            transition: background-color 0.3s; /* انیمیشن تغییر رنگ */
+        }
+
+        #backToHome:hover {
+            background-color: #218838; /* تغییر رنگ در حالت هاور */
+        }
+    </style>
+</head>
+<body>
+    <h1>
+  سرکار خانم هانیه زمانی ملقب به جوجو(جوجه) اعتراض شما در این خصوص وارد است و جهت رفع اعتراض به صفحه اصلی رفته و در صورتی که با موبایل هستید گزینه خوراکی گوشی در غیر این صورت دیگر گزینه را شخص کنید
+    </h1>
+<script>
+    // نمایش یا پنهان کردن دکمه بر اساس اسکرول
+    window.onscroll = function() {
+        const button = document.getElementById("backToTop");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            button.style.display = "block"; // نمایش دکمه
+        } else {
+            button.style.display = "none"; // پنهان کردن دکمه
+        }
+    };
+
+    // عملکرد کلیک بر روی دکمه
+    document.getElementById("backToTop").onclick = function() {
+        window.scrollTo({top: 0, behavior: 'smooth'}); // اسکرول به بالا با انیمیشن
+    };
+</script>
+<button id="backToHome" onclick="goToHome()">بازگشت   </button>
+
+<script>
+    function goToHome() {
+        window.location.href = '../index.html'; // آدرس صفحه اصلی خود را وارد کنید
+    }
+</script>
+</body>
+</html>

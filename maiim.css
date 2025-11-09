@@ -1,0 +1,6 @@
+@import "./general.css";
+@import "./dig/bos.html";
+@import "./dig/koraki.html";
+@import "./dig/koraki2.html";
+@import "./public/quary/mobile/mobile.css" only screen and (min-width:100px);
+@import "./public/quary/desktop/des.css" only screen and (min-width:900px);

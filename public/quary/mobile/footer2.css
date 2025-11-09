@@ -1,0 +1,36 @@
+.title-icon{
+    color: black;
+}
+
+.container{
+    width: 1016px;
+    margin-right: auto;
+    margin-left: auto;
+
+    margin-top: 56px;
+}
+
+.head{
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.link{
+        color:black;
+text-decoration: none;
+}
+.title{
+    color:black;
+    display: flex;
+    align-items:center;
+    gap: 8px;
+}
+
+.title-icon{
+    width: 22px;
+    height: 22px;
+    color: blue3;
+}
